@@ -1,0 +1,183 @@
+.performers__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.performers__main_items {
+    max-width: 320px;
+    max-height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.performers__main_item_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: transparent;
+    margin-right: 10px;
+}
+.performers__main_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light-grey;
+    letter-spacing: 2.5px;
+    background: $dark;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 14px;
+    max-width: 320px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.performers__main_item_number {
+    margin-right: 10px;
+    color: $light-grey;
+    white-space: nowrap;
+}
+.performers__main_item_info_counts {
+    margin-bottom: 10px;
+    color: $white;
+    .performers-count-label {
+        color: $light-grey;
+    }
+}
+.performers__main_item_info a {
+    color: $white;
+    margin-bottom: 10px;
+    &:hover {
+        color: $dark-grey;
+        transition: all ease 0.3s;
+    }
+}
+.performers__main_pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.performers__main_pagination {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.performers__main_pagination_button {
+    margin: 10px;
+    color: $light-grey;
+    &:disabled {
+        user-select: none;
+        pointer-events: none;
+        cursor: default;
+        color: $dark-grey;
+    }
+    &:hover {
+        color: $dark-grey;
+        transition: all ease 0.3s;
+    }
+}
+.performers__main_item_info_concerts {
+    color: $white;
+}
+.performers__main_item_info_concerts_inner {
+    color: $light-grey;
+}
+.performers__main_item_number_inner {
+    color: $dark-grey;
+}
+.performers__main_button {
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    color: $white;
+    background: $dark;
+    padding: 10px 20px;
+    &:disabled {
+        user-select: none;
+        pointer-events: none;
+        cursor: default;
+        color: $dark;
+        background: $white;
+    }
+    &:hover {
+        color: $dark;
+        background: $white;
+        transition: all ease 0.3s;
+    }
+}
+.performers__main_date {
+    margin-left: 25px;
+}
+.performers__main_buttons {
+    margin-bottom: 25px;
+    color: $white;
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.performers__main_search_input {
+    padding: 0;
+    border: none;
+    padding: 10px;
+    width: 216px;
+    cursor: default;
+    background: $dark;
+    color: $white;
+    border-right: 1px solid $dark-grey;
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    &::placeholder {
+        letter-spacing: 2.5px;
+        font-size: 12px;
+        text-align: center;
+        color: $light-grey;
+    }
+    &:focus {
+        cursor: default;
+        &::placeholder {
+            opacity: 0;
+            transition: all ease 0.3s;
+        }
+    }
+}
+.performers__main_search_submit {
+    min-height: 33.8px;
+    min-width: 70px;
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    background: $dark;
+    color: $white;
+    &:hover {
+        color: $dark;
+        background: $white;
+        transition: all ease 0.3s;
+    }
+    &:disabled {
+        user-select: none;
+        pointer-events: none;
+        cursor: default;
+        color: $dark-grey;
+    }
+}
+.performers__main_search {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+.performers__main_item_info {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.performers__main_results_inner {
+    color: $white;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    font-size: 10px;
+    line-height: 25px;
+    text-align: center;
+}

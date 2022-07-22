@@ -1,0 +1,42 @@
+header {
+    background: $midnight;
+    color: $dark-grey;
+    letter-spacing: 2.5px;
+    padding: 5px;
+}
+.header__navigation_ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.header__navigation_a,
+.header__logo_inner {
+    padding-top: 2px;
+    color: $light-grey;
+    &:hover {
+        color: $dark-grey;
+        transition: all ease 0.3s;
+    }
+}
+.header__navigation_li {
+    margin-right: 25px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.header__logo,
+.header__navigation {
+    padding: 5px 0;
+}
+.header__logo_inner_active,
+.header__navigation_li_active {
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    color: $dark-grey;
+    a {
+        user-select: none;
+        pointer-events: none;
+        cursor: default;
+        color: $dark-grey;
+    }
+}

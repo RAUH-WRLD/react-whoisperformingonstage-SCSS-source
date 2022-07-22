@@ -1,0 +1,19 @@
+.about__main {
+    @extend .home__main;
+}
+.about__main_title,
+.about__main_subtitle {
+    margin: 20px;
+}
+.about__main_title_inner {
+    @extend .home__main_title_inner;
+}
+.about__main_subtitle_inner {
+    @extend .home__main_subtitle_inner;
+}
+.about__main_link {
+    @extend .home__main_link;
+}
+.about__main_link_a {
+    @extend .home__main_link_a;
+}

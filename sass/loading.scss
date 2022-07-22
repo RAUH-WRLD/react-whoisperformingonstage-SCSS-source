@@ -1,0 +1,16 @@
+.loading {
+    animation: loading 3s infinite alternate-reverse;
+}
+.loading__main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading__main_status_inner {
+    @extend .home__main_subtitle_inner;
+}

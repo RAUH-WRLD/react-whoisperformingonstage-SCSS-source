@@ -1,0 +1,38 @@
+.home__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home__main_title,
+.home__main_subtitle {
+    margin: 20px;
+}
+.home__main_title_inner {
+    color: $white;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.home__main_subtitle_inner {
+    @extend .home__main_title_inner;
+    font-weight: 400;
+    font-size: 15px;
+}
+.home__main_link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home__main_link_a {
+    @extend .home__main_title_inner;
+    background: $dark;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 10px 20px;
+    &:hover {
+        color: $dark;
+        background: $white;
+        transition: all ease 0.3s;
+    }
+}
